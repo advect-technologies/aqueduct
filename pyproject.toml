@@ -1,0 +1,14 @@
+[project]
+name = "irrigation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "daq-tools",
+    "loguru>=0.7.3",
+    "sm8relind>=1.0.4",
+]
+
+[tool.uv.sources]
+daq-tools = { git = "https://github.com/advect-technologies/daq-tools.git" }
