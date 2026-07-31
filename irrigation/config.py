@@ -69,7 +69,7 @@ class Config:
         return next((z for z in self.zones if z.index == index), None)
 
     @classmethod
-    def load(cls, path: Path | str | None = None) -> Config:
+    def load(cls, path: Path | str | None = None) -> "Config":
 
         if path is None:
             path = _resolve_config_path()
